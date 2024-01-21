@@ -4,6 +4,8 @@ export class MessagesService{
     messagesRepo: MessagesRepository;
 
     constructor(){
+        //THIS IS NOT RECOMMENDED
+        //USE DEPENDENCY INJECTION
         this.messagesRepo = new MessagesRepository();
     }
 
